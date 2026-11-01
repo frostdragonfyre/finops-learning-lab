@@ -1,0 +1,21 @@
+{
+  "purpose": "Synthetic teaching data; not provider prices, actual organizational results, or a model benchmark.",
+  "shared_costs": {
+    "monthly_cost_usd": 12000,
+    "teams": [
+      { "name": "Atlas", "usage_share": 0.5 },
+      { "name": "Beacon", "usage_share": 0.3 },
+      { "name": "Cedar", "usage_share": 0.2 }
+    ],
+    "equal_allocation_fraction_for_blended_example": 0.5
+  },
+  "ai_workflows": {
+    "labor_rate_usd_per_hour": 40,
+    "cost_boundary": "Inference, allocated platform costs, and human review/correction; all attempted tasks included.",
+    "accepted_task_definition": "Final result meets the same rubric after any required review or correction.",
+    "workflows": [
+      { "name": "A", "attempts": 1000, "inference_cost_usd": 40, "platform_cost_usd": 20, "review_hours": 8, "accepted_tasks": 800 },
+      { "name": "B", "attempts": 1000, "inference_cost_usd": 80, "platform_cost_usd": 20, "review_hours": 3, "accepted_tasks": 900 }
+    ]
+  }
+}
